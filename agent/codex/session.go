@@ -141,7 +141,7 @@ func (cs *codexSession) buildExecArgs(prompt string, imagePaths []string) []stri
 
 	var args []string
 	if isResume {
-		args = []string{"exec", "resume", "--json", "--skip-git-repo-check"}
+		args = []string{"exec", "--json", "resume",  "--skip-git-repo-check"}
 	} else {
 		args = []string{"exec", "--json", "--skip-git-repo-check"}
 	}
